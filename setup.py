@@ -14,7 +14,7 @@ with open("README.md", "r") as fp:
 
 setup(
     name="terminal-img",
-    version="0.0.1",
+    version="0.0.2",
     author="Pranav Baburaj",
     author_email="i.am.pranav.baburaj@gmail.com",
     url="https://github.com/pranavbaburaj/img",
