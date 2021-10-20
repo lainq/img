@@ -50,6 +50,13 @@ img = DrawImage(Image.open("img.png"))
 img.draw_image()
 ```
 
+#### CLI
+```
+img <file or url>
+```
+```
+im
+
 ## Methods
 
 
