@@ -54,8 +54,7 @@ img.draw_image()
 ```
 img <file or url>
 ```
-```
-im
+
 
 ## Methods
 
