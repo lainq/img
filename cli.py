@@ -46,7 +46,7 @@ class ImageCLI(object):
                 f"Invalid size parameter: {parameters.get('size')}"
             )
         try:
-            DrawImage().from_file(filename, sie).draw_image() if os.path.isfile(
+            DrawImage().from_file(filename, size).draw_image() if os.path.isfile(
                 filename
             ) else DrawImage.from_url(filename, size).draw_image()
         except Exception as exception:
