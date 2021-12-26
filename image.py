@@ -9,8 +9,8 @@ from urllib.parse import urlparse
 
 
 class DrawImage(object):
-    # TODO: try 2588 
-    PIXEL: str = "\u2584" 
+    # TODO: try 2588
+    PIXEL: str = "\u2584"
 
     def __init__(self, image: Image.Image, size: Optional[Tuple[int, int]] = (24, 24)):
         if not isinstance(image, Image.Image):
