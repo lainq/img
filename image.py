@@ -9,7 +9,8 @@ from urllib.parse import urlparse
 
 
 class DrawImage(object):
-    PIXEL: str = "\u2584"
+    # TODO: try 2588 
+    PIXEL: str = "\u2584" 
 
     def __init__(self, image: Image.Image, size: Optional[Tuple[int, int]] = (24, 24)):
         if not isinstance(image, Image.Image):
@@ -63,6 +64,8 @@ class DrawImage(object):
     def __draw_image(self, image: Image.Image):
         if self.size:
             image = image.resize(self.size)
+        else:
+            image = image.resize(os.get_terminal_size())
         pixel_values = image.convert("RGB").getdata()
         width, _ = image.size
 
